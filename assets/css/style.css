@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('../images/img.jpg') no-repeat;
+  background: url('../images/one.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -94,4 +94,95 @@ body {
 
 .register-link p a:hover {
   text-decoration: underline;
+}
+
+/* Image upload */
+
+/* .profileIMG-wrapper {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: url('../images/profile02.jpg');
+  background-size: 100% 100%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.profileIMG {
+  position: absolute;
+  bottom: 0;
+  outline: none;
+  color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 120px;
+  cursor: pointer;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.profileIMG::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.profileIMG::before {
+  content: '\f030 ';
+  font-family: fontAwesome;
+  font-size: 50px;
+  color: #fff;
+  display: inline-block;
+  -webkit-user-select: none;
+}
+
+.profileIMG::after {
+  content: 'Update';
+  font-family: 'arial';
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  top: 70px;
+  font-size: 14px;
+}
+
+.profileIMG:hover {
+  opacity: 1;
+} */
+
+/* new image upload */
+
+.profileIMG-wrapper {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+#photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#file {
+  display: none;
+}
+
+#uploadbtn {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  padding: 6px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  transform: translateX(-90%);
+  margin-top: 100px;
+  background-color: rgb(173, 172, 172, 0.801);
+  box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
 }
