@@ -16,33 +16,49 @@
   </head>
   <body>
     <div class="wrapper">
-      <form action="">
+      <form id="registerForm">
         <h1>Register</h1>
         <div class="profileIMG-wrapper">
           <img src="assets/images/user.png" alt="profile Image" id="photo" />
-          <input type="file" id="file" />
-          <label for="file" id="uploadbtn"><i class="bx bxs-camera"></i></label>
+          <input type="file" id="adminIMG" />
+          <label for="adminIMG" id="uploadbtn"
+            ><i class="bx bxs-camera"></i
+          ></label>
         </div>
         <div class="input-box">
-          <input type="text" name="" id="" placeholder="User Name" required />
+          <input
+            type="text"
+            name="adminName"
+            id="adminName"
+            placeholder="User Name"
+            required
+          />
           <i class="bx bxs-user"></i>
         </div>
         <div class="input-box">
-          <input type="email" name="" id="" placeholder="Email" required />
+          <input
+            type="email"
+            name="adminEmail"
+            id="adminEmail"
+            placeholder="Email"
+            required
+          />
           <i class="bx bxs-envelope"></i>
         </div>
         <div class="input-box">
           <input
             type="password"
-            name=""
-            id=""
+            name="adminPassword"
+            id="adminPassword"
             placeholder="Password"
             required
           />
           <i class="bx bxs-lock-alt"></i>
         </div>
 
-        <button type="submit" class="login-btn">Register</button>
+        <button type="button" class="login-btn" id="saveAdminBtn">
+          Register
+        </button>
 
         <div class="register-link">
           <p>Already you have an account? <a href="index.html">Sign in</a></p>
