@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Car Rental</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/adminstyle.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class="bx bxs-car"></i>
+        <span class="logo_name">EasyCarRental</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="adminDashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDashboard.html">Dashboard</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" role="presentation">
+          <div class="iocn-link">
+            <a href="adminCustomer.html">
+              <i class="bx bxs-user"></i>
+              <span class="link_name">Customer</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="adminCustomer.html">Customer</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="adminCarManage.html">
+              <i class="bx bxs-car"></i>
+              <span class="link_name">Manage Car</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="adminCarManage.html">Manage Car</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="adminDriverManage.html">
+            <i class="bx bxs-group"></i>
+            <span class="link_name">Manage Drivers</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDriverManage.html"
+                >Manage Drivers</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-message-rounded-dots"></i>
+            <span class="link_name">Rental Request</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Rental Request</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Income</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Income</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="profile-details">
+            <i
+              class="bx bx-log-out"
+              data-bs-toggle="modal"
+              data-bs-target="#logOutModal"
+            ></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <section class="home-section">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <span class="text">Dashboard</span>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="logOutModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Log Out</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a href="../index.html"
+                  ><button type="button" class="btn btn-primary">Yes</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/admin.js"></script>
+  </body>
+</html>

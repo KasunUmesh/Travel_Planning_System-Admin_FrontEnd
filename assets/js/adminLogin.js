@@ -59,8 +59,6 @@ function adminLogin() {
     adminPassword: $("#adminPassword").val(),
   };
 
-  console.log(data);
-
   $.ajax({
     url: loginBaseUrl,
     method: "POST",
@@ -69,14 +67,16 @@ function adminLogin() {
     contentType: "application/json",
     success: function (res) {
       if (res.status == true) {
-        console.log("Login success");
-        window.location.href = "registerForm.html";
+        window.location.href = "../pages/adminDashboard.html";
       } else {
-        console.log("Error");
+        if (res.message != "Password Not Match") {
+          $("#emailError").text(res.message);
+          $("#emailError").css("display", "block");
+        } else {
+          $("#passwordError").text(res.message);
+          $("#passwordError").css("display", "block");
+        }
       }
-
-      console.log(res);
-      console.log(res.status);
     },
     error: function (ob) {
       alert(ob.responseJSON.message);
