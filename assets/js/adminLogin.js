@@ -30,6 +30,18 @@ $(document).ready(function () {
       $("#adminEmail").css("border-color", "#e72438");
     }
   });
+
+  $("#adminPassword").on("input", function () {
+    var email = $("#adminPassword").val();
+
+    if (email == "") {
+      $("#passwordError").css("display", "block");
+      $("#adminPassword").css("border-color", "#e72438");
+    } else {
+      $("#passwordError").css("display", "none");
+      $("#adminPassword").css("border", "2px solid rgba(255, 255, 255, .2)");
+    }
+  });
 });
 
 // Admin Login Function
@@ -58,6 +70,7 @@ function adminLogin() {
     success: function (res) {
       if (res.status == true) {
         console.log("Login success");
+        window.location.href = "registerForm.html";
       } else {
         console.log("Error");
       }
