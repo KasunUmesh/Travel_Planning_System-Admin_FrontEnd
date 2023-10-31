@@ -19,7 +19,7 @@ file.addEventListener("change", function () {
 
 // Frontend and backend functions
 
-var baseUrl = "http://localhost:8083/travelPlanning/admin";
+var baseUrl = "http://localhost:8083/travelPlanning/admin/save";
 
 $("#saveAdminBtn").click(function () {
   saveAdmin();
