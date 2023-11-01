@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planning System</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/adminstyle.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class="bx bxs-plane-take-off"></i>
+        <span class="logo_name">Travel Planning</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="adminDashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDashboard.html">Dashboard</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item" role="presentation">
+          <div class="iocn-link">
+            <a href="adminUsers.html">
+              <i class="bx bxs-user"></i>
+              <span class="link_name">Users</span>
+            </a>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="adminUsers.html">Users</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <a href="adminCarManage.html">
+              <i class="bx bxs-car"></i>
+              <span class="link_name">Vehicles</span>
+            </a>
+          </div>
+          <ul class="sub-menu">
+            <li>
+              <a class="link_name" href="adminCarManage.html">Vehicles</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="adminDriverManage.html">
+            <i class="bx bxs-building-house"></i>
+            <span class="link_name">Hotels</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li>
+              <a class="link_name" href="adminDriverManage.html">Hotels</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-message-rounded-dots"></i>
+            <span class="link_name">Rental Request</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Rental Request</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-line-chart"></i>
+            <span class="link_name">Income</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Income</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <div class="profile-details">
+            <i
+              class="bx bx-log-out"
+              data-bs-toggle="modal"
+              data-bs-target="#logOutModal"
+            ></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <section class="home-section">
+        <div class="home-content">
+          <i class="bx bx-menu"></i>
+          <span class="text">Users Manage</span>
+          <span class="text userName">Kasun Umesh</span>
+          <img src="../assets/images/user.png" alt="Admin Profile" />
+        </div>
+
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <form class="row g-4 pt-5" id="vehicleForm">
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="UserName"
+                    placeholder="User Name"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Address"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nicNo"
+                    placeholder="NIC/ Passport No"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="gender"
+                  >
+                    <option selected>Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="age"
+                    placeholder="Age"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="remark"
+                    placeholder="Remark"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <label for="input-file1" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file1"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view1" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload Profile image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label for="input-file2" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file2"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view2" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload NIC/ Passport Front image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label for="input-file3" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file3"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view3" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload NIC/ Passport back image</p>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3">
+                  <button
+                    class="btn btn-success btn-lg rounded-pill"
+                    type="button"
+                    id="btnSaveVehicle"
+                  >
+                    <i class="bx bxs-save fs-5"></i>
+                    Save Vehicle
+                  </button>
+
+                  <button
+                    class="btn btn-danger btn-lg rounded-pill"
+                    type="button"
+                    id="btnSaveVehicle"
+                  >
+                    <i class="bx bxs-trash"></i>
+                    Delete
+                  </button>
+
+                  <button
+                    class="btn btn-primary btn-lg rounded-pill"
+                    type="button"
+                    id="btnSaveVehicle"
+                  >
+                    <i class="bx bxs-edit-alt"></i>
+                    Update
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row justify-content-center pt-5">
+            <div class="col-md-11">
+              <table class="table align-middle mb-0 bg-light table-hover">
+                <thead class="bg-success text-center text-white">
+                  <tr>
+                    <th>Registration Number</th>
+                    <th>Brand</th>
+                    <th>Type</th>
+                    <th>Color</th>
+                    <th>Fuel Type</th>
+                    <th>Transmission</th>
+                    <th>Passengers</th>
+                    <th>Mileage</th>
+                    <th>Rented Status</th>
+                  </tr>
+                </thead>
+
+                <tbody class="text-center table-info" id="tblVehicle">
+                  <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/admin.js"></script>
+    <script src="../assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/adminUsers.js"></script>
+  </body>
+</html>
