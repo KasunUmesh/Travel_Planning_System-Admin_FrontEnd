@@ -112,7 +112,7 @@
           <div class="row justify-content-center">
             <div class="col-md-10">
               <form class="row g-4 pt-5" id="vehicleForm">
-                <div class="col-md-4">
+                <div class="col-md-2">
                   <input
                     type="text"
                     class="form-control"
@@ -121,7 +121,7 @@
                   />
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-2">
                   <select
                     class="form-select"
                     aria-label="Default select example"
@@ -135,64 +135,92 @@
                   </select>
                 </div>
 
-                <div class="col-md-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="address"
-                    placeholder="Address"
-                  />
-                </div>
-
-                <div class="col-md-4">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email"
-                  />
-                </div>
-
-                <div class="col-md-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="nicNo"
-                    placeholder="NIC/ Passport No"
-                  />
-                </div>
-
-                <div class="col-md-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="phone"
-                    placeholder="Phone Number"
-                  />
-                </div>
-
-                <div class="col-md-4">
+                <div class="col-md-2">
                   <select
                     class="form-select"
                     aria-label="Default select example"
-                    id="gender"
+                    id="vehicleType"
                   >
-                    <option selected>Select Gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
+                    <option selected>Select Vehicle Type</option>
+                    <option value="1">Car</option>
+                    <option value="2">Van</option>
+                    <option value="3">SUV</option>
+                    <option value="4">Bus</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="fuelType"
+                  >
+                    <option selected>Select Fuel Type</option>
+                    <option value="1">Petrol</option>
+                    <option value="2">Diesel</option>
                   </select>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-2">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="ishybrid"
+                  >
+                    <option selected>Select Hybrid or Non-Hybrid</option>
+                    <option value="1">Hybrid</option>
+                    <option value="2">No Hybrid</option>
+                  </select>
+                </div>
+
+                <div class="col-md-2">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="ishybrid"
+                  >
+                    <option selected>Select Auto or Manual</option>
+                    <option value="1">Auto</option>
+                    <option value="2">Manual</option>
+                  </select>
+                </div>
+
+                <div class="col-md-2">
                   <input
                     type="text"
                     class="form-control"
-                    id="age"
-                    placeholder="Age"
+                    id="fuelUsage"
+                    placeholder="Fuel Usage (KM/L)"
                   />
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="noOfSeat"
+                    placeholder="Number of Seat"
+                  />
+                </div>
+
+                <div class="col-md-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="driverName"
+                    placeholder="Driver Name"
+                  />
+                </div>
+
+                <div class="col-md-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="driverContact"
+                    placeholder="Driver Contact"
+                  />
+                </div>
+
+                <div class="col-md-3">
                   <input
                     type="text"
                     class="form-control"
@@ -201,16 +229,7 @@
                   />
                 </div>
 
-                <div class="col-md-4">
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="Password"
-                  />
-                </div>
-
-                <div class="col-md-4">
+                <div class="col-md-2">
                   <label for="input-file1" id="drop-area">
                     <input
                       type="file"
@@ -221,11 +240,11 @@
                     />
                     <div id="img-view1" class="view">
                       <img src="../assets/images/imgUpload-icon.png" />
-                      <p>Click here to upload Profile image</p>
+                      <p>Click here to upload Vehicle Side Image</p>
                     </div>
                   </label>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                   <label for="input-file2" id="drop-area">
                     <input
                       type="file"
@@ -236,11 +255,11 @@
                     />
                     <div id="img-view2" class="view">
                       <img src="../assets/images/imgUpload-icon.png" />
-                      <p>Click here to upload NIC/ Passport Front image</p>
+                      <p>Click here to upload Vehicle Front Image</p>
                     </div>
                   </label>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                   <label for="input-file3" id="drop-area">
                     <input
                       type="file"
@@ -251,7 +270,67 @@
                     />
                     <div id="img-view3" class="view">
                       <img src="../assets/images/imgUpload-icon.png" />
-                      <p>Click here to upload NIC/ Passport back image</p>
+                      <p>Click here to upload Vehicle Back Image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label for="input-file1" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file1"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view1" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload Vehicle Front Interior image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label for="input-file1" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file1"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view1" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload Vehicle Back Interior image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label for="input-file1" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file1"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view1" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload Driver license Front image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label for="input-file1" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file1"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view1" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload Driver license Back image</p>
                     </div>
                   </label>
                 </div>
@@ -307,6 +386,11 @@
                     <th>Password</th>
                     <th>Profile Image</th>
                     <th>NIC/ Passport Front Image</th>
+                    <th>NIC/ Passport Back Image</th>
+                    <th>NIC/ Passport Back Image</th>
+                    <th>NIC/ Passport Back Image</th>
+                    <th>NIC/ Passport Back Image</th>
+                    <th>NIC/ Passport Back Image</th>
                     <th>NIC/ Passport Back Image</th>
                   </tr>
                 </thead>

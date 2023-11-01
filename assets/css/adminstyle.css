@@ -251,8 +251,8 @@
 /* Image upload */
 
 #drop-area {
-  width: 290px;
-  height: 190px;
+  width: 190px;
+  height: 130px;
   padding: 10px;
   background: #fff;
   text-align: center;
@@ -271,11 +271,11 @@
 
 .view img {
   width: 40px;
-  margin-top: 50px;
+  margin-top: 5px;
 }
 
 .view p {
-  font-size: 17px;
+  font-size: 14px;
 }
 
 .tableImgSize {
