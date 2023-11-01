@@ -223,7 +223,8 @@
 }
 
 .home-content {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  box-shadow: 0px 3px 10px 2px rgb(0 0 0 / 55%);
 }
 
 .home-content img {
