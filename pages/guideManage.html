@@ -103,7 +103,7 @@
       <section class="home-section">
         <div class="home-content">
           <i class="bx bx-menu"></i>
-          <span class="text">Hotel Manage</span>
+          <span class="text">Guide Manage</span>
           <span class="text userName">Kasun Umesh</span>
           <img src="../assets/images/user.png" alt="Admin Profile" />
         </div>
@@ -116,8 +116,8 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="hotelName"
-                    placeholder="Hotel Name"
+                    id="UserName"
+                    placeholder="User Name"
                   />
                 </div>
 
@@ -125,31 +125,8 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="location"
-                    placeholder="Location"
-                  />
-                </div>
-
-                <div class="col-md-4">
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                    id="category"
-                  >
-                    <option selected>Select Category</option>
-                    <option value="1">Regular</option>
-                    <option value="2">Mid-level</option>
-                    <option value="1">Luxury</option>
-                    <option value="2">Super Luxury</option>
-                  </select>
-                </div>
-
-                <div class="col-md-2">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="starRate"
-                    placeholder="Star Rate"
+                    id="address"
+                    placeholder="Address"
                   />
                 </div>
 
@@ -162,7 +139,16 @@
                   />
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nicNo"
+                    placeholder="NIC/ Passport No"
+                  />
+                </div>
+
+                <div class="col-md-4">
                   <input
                     type="text"
                     class="form-control"
@@ -171,15 +157,15 @@
                   />
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-4">
                   <select
                     class="form-select"
                     aria-label="Default select example"
-                    id="petAllowed"
+                    id="gender"
                   >
-                    <option selected>Select Pet allowed or not</option>
-                    <option value="1">Allowed</option>
-                    <option value="2">Not Allowed</option>
+                    <option selected>Select Gender</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
                   </select>
                 </div>
 
@@ -187,17 +173,8 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="cancellation"
-                    placeholder="Cancellation Criteria"
-                  />
-                </div>
-
-                <div class="col-md-4">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="hotelFee"
-                    placeholder="Hotel Fee"
+                    id="age"
+                    placeholder="Age"
                   />
                 </div>
 
@@ -207,6 +184,15 @@
                     class="form-control"
                     id="remark"
                     placeholder="Remark"
+                  />
+                </div>
+
+                <div class="col-md-4">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Password"
                   />
                 </div>
 
@@ -221,7 +207,37 @@
                     />
                     <div id="img-view1" class="view">
                       <img src="../assets/images/imgUpload-icon.png" />
-                      <p>Click here to upload Hotel Image</p>
+                      <p>Click here to upload Profile image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label for="input-file2" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file2"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view2" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload NIC/ Passport Front image</p>
+                    </div>
+                  </label>
+                </div>
+                <div class="col-md-2">
+                  <label for="input-file3" id="drop-area">
+                    <input
+                      type="file"
+                      accept="images/*"
+                      id="input-file3"
+                      class="input"
+                      hidden
+                    />
+                    <div id="img-view3" class="view">
+                      <img src="../assets/images/imgUpload-icon.png" />
+                      <p>Click here to upload NIC/ Passport back image</p>
                     </div>
                   </label>
                 </div>
@@ -233,7 +249,7 @@
                     id="btnSaveVehicle"
                   >
                     <i class="bx bxs-save fs-5"></i>
-                    Register Hotel
+                    Register User
                   </button>
 
                   <button
@@ -266,37 +282,51 @@
                 <thead class="bg-success text-center text-white">
                   <tr>
                     <th>ID</th>
-                    <th>Hotel Name</th>
-                    <th>Location</th>
-                    <th>Category</th>
-                    <th>Star Rate</th>
+                    <th>User Name</th>
+                    <th>Address</th>
                     <th>Email</th>
+                    <th>NIC/ Passport No</th>
                     <th>Phone Number</th>
-                    <th>Pet Allowed or Not</th>
-                    <th>Cancellation Criteria</th>
-                    <th>Hotel Fee (LKR)</th>
+                    <th>Gender</th>
+                    <th>Age</th>
                     <th>Remark</th>
-                    <th>Hotel Image</th>
+                    <th>Password</th>
+                    <th>Profile Image</th>
+                    <th>NIC/ Passport Front Image</th>
+                    <th>NIC/ Passport Back Image</th>
                   </tr>
                 </thead>
 
                 <tbody class="text-center table-info" id="tblVehicle">
                   <tr>
                     <td>01</td>
-                    <td>Blue Water Hotel</td>
-                    <td>Wadduwa</td>
-                    <td>Super Luxury</td>
-                    <td>5</td>
-                    <td>bluwaterhotel@gmail.com</td>
-                    <td>0637584963</td>
-                    <td>Allowed</td>
-                    <td>Free</td>
-                    <td>6000</td>
+                    <td>Kasun Umesh</td>
+                    <td>Panadura</td>
+                    <td>kasun@gmail.com</td>
+                    <td>200106801729</td>
+                    <td>0770313314</td>
+                    <td>Male</td>
+                    <td>22</td>
+                    <td>test</td>
                     <td>test</td>
                     <td>
                       <img
-                        src="../assets/images/hotel.jpeg"
-                        alt="hotel image"
+                        src="../assets/images/images (2).jpeg"
+                        alt="Profile"
+                        class="tableImgSize"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="../assets/images/id front.jpg"
+                        alt="NIC/Passport img"
+                        class="tableImgSize"
+                      />
+                    </td>
+                    <td>
+                      <img
+                        src="../assets/images/idback.jpg"
+                        alt="NIC/Passport img"
                         class="tableImgSize"
                       />
                     </td>
