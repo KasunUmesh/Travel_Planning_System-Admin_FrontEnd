@@ -282,3 +282,10 @@
   width: 100px;
 }
 
+.table-container {
+  
+  width: 85%;
+  overflow-x: scroll;
+}
+
+
