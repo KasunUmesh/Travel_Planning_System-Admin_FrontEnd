@@ -102,7 +102,7 @@
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <form class="row g-4 pt-5" id="vehicleForm">
+              <form class="row g-4 pt-5">
                 <div class="col-md-2">
                   <input
                     type="text"
@@ -167,7 +167,7 @@
                   <select
                     class="form-select"
                     aria-label="Default select example"
-                    id="ishybrid"
+                    id="isAuto"
                   >
                     <option selected>Select Auto or Manual</option>
                     <option value="1">Auto</option>
@@ -345,18 +345,17 @@
 
                 <div class="col-md-5 align-self-end text-end">
                   <button
-                    class="btn btn-success btn-lg rounded-pill"
                     type="button"
+                    class="btn btn-success btn-lg rounded-pill"
                     id="btnSaveVehicle"
                   >
-                    <i class="bx bxs-save fs-5"></i>
                     Register Vehicle
                   </button>
 
                   <button
                     class="btn btn-danger btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    id="btnDeleteVehicle"
                   >
                     <i class="bx bxs-trash"></i>
                     Delete
@@ -365,7 +364,7 @@
                   <button
                     class="btn btn-primary btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    id="btnUpdateVehicle"
                   >
                     <i class="bx bxs-edit-alt"></i>
                     Update
@@ -407,71 +406,7 @@
                 </thead>
 
                 <tbody class="text-center table-info" id="tblVehicle">
-                  <tr>
-                    <td>01</td>
-                    <td>Toyota Allion</td>
-                    <td>Luxury</td>
-                    <td>Car</td>
-                    <td>Petrol</td>
-                    <td>Hybrid</td>
-                    <td>Auto</td>
-                    <td>15</td>
-                    <td>4</td>
-                    <td>35000</td>
-                    <td>350</td>
-                    <td>Nipun</td>
-                    <td>0753502403</td>
-                    <td>test</td>
-                    <td>
-                      <img
-                        src="../assets/images/carside.jpeg"
-                        alt="VehicleSideImage"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/carfront.jpeg"
-                        alt="VehicleFrontImage"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/carBack.jpeg"
-                        alt="VehicleBackImage"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/carfrontinterior.jpeg"
-                        alt="VehicleFrontInteriorImage"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/carbackinterior.jpeg"
-                        alt="VehicleBackInteriorImage"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/id front.jpg"
-                        alt="DriverlicenseFrontImage"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/idback.jpg"
-                        alt="DriverlicenseBackImage"
-                        class="tableImgSize"
-                      />
-                    </td>
-                  </tr>
+                  <tr></tr>
                 </tbody>
               </table>
             </div>
@@ -482,7 +417,8 @@
 
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/admin.js"></script>
-    <script src="../assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="../assets/jQuery/jquery-3.6.4.min.js"></script>
     <script src="../assets/js/imageupload.js"></script>
+    <script src="../assets/js/vehicle.js"></script>
   </body>
 </html>
