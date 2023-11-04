@@ -102,7 +102,7 @@
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <form class="row g-4 pt-5" id="vehicleForm">
+              <form class="row g-4 pt-5">
                 <div class="col-md-4">
                   <input
                     type="text"
@@ -235,18 +235,17 @@
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3">
                   <button
-                    class="btn btn-success btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    class="btn btn-success btn-lg rounded-pill"
+                    id="btnSaveUser"
                   >
-                    <i class="bx bxs-save fs-5"></i>
                     Register User
                   </button>
 
                   <button
                     class="btn btn-danger btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    id="btnDeleteVehicle"
                   >
                     <i class="bx bxs-trash"></i>
                     Delete
@@ -255,7 +254,7 @@
                   <button
                     class="btn btn-primary btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    id="btnUpdateVehicle"
                   >
                     <i class="bx bxs-edit-alt"></i>
                     Update
@@ -288,40 +287,8 @@
                   </tr>
                 </thead>
 
-                <tbody class="text-center table-info" id="tblVehicle">
-                  <tr>
-                    <td>01</td>
-                    <td>Kasun Umesh</td>
-                    <td>Panadura</td>
-                    <td>kasun@gmail.com</td>
-                    <td>200106801729</td>
-                    <td>0770313314</td>
-                    <td>Male</td>
-                    <td>22</td>
-                    <td>test</td>
-                    <td>test</td>
-                    <td>
-                      <img
-                        src="../assets/images/images (2).jpeg"
-                        alt="Profile"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/id front.jpg"
-                        alt="NIC/Passport img"
-                        class="tableImgSize"
-                      />
-                    </td>
-                    <td>
-                      <img
-                        src="../assets/images/idback.jpg"
-                        alt="NIC/Passport img"
-                        class="tableImgSize"
-                      />
-                    </td>
-                  </tr>
+                <tbody class="text-center table-info" id="tblUser">
+                  <tr></tr>
                 </tbody>
               </table>
             </div>
@@ -332,7 +299,8 @@
 
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/admin.js"></script>
-    <script src="../assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="../assets/jQuery/jquery-3.6.4.min.js"></script>
     <script src="../assets/js/imageupload.js"></script>
+    <script src="../assets/js/user.js"></script>
   </body>
 </html>
