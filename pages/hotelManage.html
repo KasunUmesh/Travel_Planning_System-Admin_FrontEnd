@@ -102,7 +102,7 @@
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-md-10">
-              <form class="row g-4 pt-5" id="vehicleForm">
+              <form class="row g-4 pt-5">
                 <div class="col-md-4">
                   <input
                     type="text"
@@ -219,18 +219,17 @@
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-3">
                   <button
-                    class="btn btn-success btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    class="btn btn-success btn-lg rounded-pill"
+                    id="btnSaveHotel"
                   >
-                    <i class="bx bxs-save fs-5"></i>
                     Register Hotel
                   </button>
 
                   <button
                     class="btn btn-danger btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    id="btnDeleteVehicle"
                   >
                     <i class="bx bxs-trash"></i>
                     Delete
@@ -239,7 +238,7 @@
                   <button
                     class="btn btn-primary btn-lg rounded-pill"
                     type="button"
-                    id="btnSaveVehicle"
+                    id="btnUpdateVehicle"
                   >
                     <i class="bx bxs-edit-alt"></i>
                     Update
@@ -271,27 +270,8 @@
                   </tr>
                 </thead>
 
-                <tbody class="text-center table-info" id="tblVehicle">
-                  <tr>
-                    <td>01</td>
-                    <td>Blue Water Hotel</td>
-                    <td>Wadduwa</td>
-                    <td>Super Luxury</td>
-                    <td>5</td>
-                    <td>bluwaterhotel@gmail.com</td>
-                    <td>0637584963</td>
-                    <td>Allowed</td>
-                    <td>Free</td>
-                    <td>6000</td>
-                    <td>test</td>
-                    <td>
-                      <img
-                        src="../assets/images/hotel.jpeg"
-                        alt="hotel image"
-                        class="tableImgSize"
-                      />
-                    </td>
-                  </tr>
+                <tbody class="text-center table-info" id="tblHotel">
+                  <tr></tr>
                 </tbody>
               </table>
             </div>
@@ -302,7 +282,8 @@
 
     <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/admin.js"></script>
-    <script src="../assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="../assets/JQuery/jquery-3.6.4.min.js"></script>
     <script src="../assets/js/imageupload.js"></script>
+    <script src="../assets/js/hotel.js"></script>
   </body>
 </html>
